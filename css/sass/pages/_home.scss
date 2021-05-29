@@ -1,0 +1,128 @@
+.slider{
+    blockquote{
+     font-size: 20px;
+     line-height: 1.7;
+     text-align: center;
+     font-style: italic;
+     font-weight: bold;
+     color: #5e5e5e;
+     font-family: Tahoma, Arial;
+     width: 80%;
+     margin: 30px auto;
+    }
+    img{
+       max-width: 100%;
+    }
+    .bukkets{
+        text-align: center;
+      li{
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(202, 202, 202);
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 1px solid rgb(202, 202, 202);
+        &.active{
+            border: 1px solid black;
+        }
+    }
+    }
+}
+
+.services{
+    .service-box{
+        float: $float-left;
+        width: (100% / 3);
+        margin-bottom: 20px;
+        &:not(:last-of-type){
+            padding-right: 20px;
+        }
+        @media #{$maxMobile}  {
+            width: 100%;
+            float: none;
+            i {
+                 display: block;
+                 margin-bottom: 15px;
+            }
+          }
+     .link{
+         color: $redColor;
+         text-decoration: none;
+     }
+     p{
+       color: $grayColor;
+     }
+    }
+}
+
+
+.players{
+    .players-box{
+        float: $float-left;
+        margin-bottom: 20px;
+        @media #{$minSmall} {
+            width: (100% / 2);
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media #{$minMedium} {
+            width: (100% / 4);
+        }
+        @media #{$maxMobile}  {
+            width: 100%;
+            float: none;
+            text-align: center;
+            padding-right: 10px;
+          }
+     .link{
+         color: $redColor;
+         text-decoration: none;
+     }
+     p{
+       color: $grayColor;
+     }
+    }
+}
+
+.lorem{
+    .lorem-box{
+        float: $float-left;
+        margin-bottom: 20px;
+        text-align: center;
+        &:not(:last-of-type){
+            margin-right: 3%;
+        }
+        @media #{$minSmall} {
+            width: (94% / 2);
+            &:last-of-type{
+                display: none;
+            }
+        }
+        @media #{$minMedium} {
+            width: (94% / 3);
+            &:last-of-type{
+                display: block;
+            }
+        }
+        @media #{$maxMobile}  {
+            width: 100%;
+            float: none;
+           
+          }
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+{
+  "name": "templetsass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "i": "^0.3.6",
+    "init": "^0.1.2",
+    "node-sass": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node-sass sass/main.scss sass/main.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

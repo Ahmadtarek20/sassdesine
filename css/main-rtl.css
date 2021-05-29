@@ -1,0 +1,89 @@
+@media (min-width: 992px) {
+  .header .logo {
+    float: right;
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .navbar {
+    float: right;
+    text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .navbar {
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header .navbar li {
+  float: right;
+}
+
+.services .service-box {
+  float: right;
+}
+
+.players .players-box {
+  float: right;
+}
+
+.lorem .lorem-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .lorem .lorem-box {
+    margin-right: 3%;
+  }
+}
+
+.footer .gallery, .footer .info, .footer .contact {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box img {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .gallery .img-box .text {
+    float: right;
+  }
+}
+
+.the-toggler {
+  background-color: #4e1313;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 83%;
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .the-toggler {
+    display: block;
+  }
+}
+
+.the-toggler span {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #FFF;
+}
+
+.the-toggler span:not(:last-child) {
+  margin-bottom: 3px;
+}
+/*# sourceMappingURL=main-rtl.css.map */

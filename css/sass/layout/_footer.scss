@@ -1,0 +1,84 @@
+.footer{
+    background: dimgrey;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    .gallery, .info, .contact{
+        float: $float-left;
+    }
+    .gallery{
+     width: 50%;
+     @media #{$maxMobile}  {
+        width: 100%;
+        float: none;
+      }
+     .img-box{
+         overflow: hidden;
+         img{
+             width: 150px;
+             height: 150px;
+             margin-top: 10px;
+             @media #{$minSmall} {
+               float: $float-left;
+           }
+         }
+         .text{
+            @media #{$minSmall} {
+               width: calc(100% - 180px);
+               float: $float-left;
+               margin-left: 15px;
+               margin-right: 15px;
+           }
+            h4{
+              color: $redColor;
+            }
+            p{
+               color: white;
+            }
+         }
+     }
+    }
+    .info{
+     width: 25%;
+     @media #{$maxMobile}  {
+        width: 100%;
+        float: none;
+      }
+     ul{
+        color: white;
+     }
+     h4{
+        color: white;
+        font-weight: bold;
+     }
+     p{
+        color: white;
+        margin-top: 5px;
+     }
+    }
+    .contact{
+     width: 25%;
+     @media #{$maxMobile}  {
+        width: 100%;
+        float: none;
+      }
+     input[type="text"],
+     input[type="email"],
+     textarea{
+         border: 1px solid white;
+         padding: 10px;
+         margin-bottom: 5px;
+         width: 100%;
+         border-radius: 10px;
+         -webkit-border-radius: 10px;
+         -moz-border-radius: 10px;
+         -ms-border-radius: 10px;
+         -o-border-radius: 10px;
+}
+    }
+    .section-title{
+        color: blanchedalmond;
+        font-weight: normal;
+    }
+}

@@ -1,0 +1,110 @@
+
+@import 'sass/helpers/variabls';
+
+
+
+$float-left: right;
+$float-right: left;
+
+
+
+$text-left: right;
+$text-right: left;
+
+
+.header{
+    .logo{
+        @media #{$minMedium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+    }
+    .navbar{
+        @media #{$minMedium} {
+            float: $float-left;
+            text-align: $text-left;
+        }
+        @media #{$maxMobile} {
+            text-align: $text-left;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        li{
+            float: $float-left;
+        }
+    }
+}
+
+
+
+.services{
+    .service-box{
+        float: $float-left;
+    }
+}
+
+
+.players{
+    .players-box{
+        float: $float-left;
+    }
+}
+
+.lorem{
+    .lorem-box{
+        margin-bottom: 20px;
+        text-align: center;
+        @media #{$maxMobile} {
+            margin-right: 3%;
+        }
+    }
+}
+
+
+.footer{
+    .gallery, .info, .contact{
+        float: $float-left;
+    }
+    .gallery{
+     .img-box{
+         img{
+             @media #{$minSmall} {
+               float: $float-left;
+           }
+         }
+         .text{
+            @media #{$minSmall} {
+               float: $float-left;
+           }
+         }
+     }
+    }
+
+}
+
+
+
+.the-toggler{
+    background-color: $redColor;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 18px;
+    right: 83%;
+    display: none;
+    @media #{$maxMobile} {
+        display: block;
+    }
+ 
+    span{
+        display: block;
+        width: 50px;
+        height: 4px;
+        background-color: #FFF;
+        &:not(:last-child){
+            margin-bottom: 3px;
+        }
+    }
+}
+
